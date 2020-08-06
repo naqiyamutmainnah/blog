@@ -19,6 +19,10 @@ Route::get('/welcome', 'AuthController@welcome');
 
 Route::post('/welcome', 'AuthController@welcome_post');
 
-//route ::get('/master', function(){
+Route::get('/master', function(){
+    return view('master');
+});
+
+//Route ::get('/master', function(){
 //     return view('master');
 // });
