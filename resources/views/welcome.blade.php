@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Sanberbook</title>
 
-        <!-- Fonts -->
+        {{-- <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
@@ -61,10 +61,14 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-        </style>
+        </style> --}}
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+    <div>
+    <h2>SELAMAT DATANG!</h2>
+    <h4>Terima kasih telah bergabung di Sanberbook. Social Media kita bersama!</h4>
+    </div>
+        {{-- <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -95,6 +99,6 @@
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </body>
 </html>
