@@ -38,6 +38,9 @@ Route::get('/items', function(){
 Route::get('/items/create', function(){
     return view('items.create');
 });
+
+Route::get('/pertanyaan', 'PertanyaanController@index');
+
 //Route ::get('/master', function(){
 //     return view('master');
 // });

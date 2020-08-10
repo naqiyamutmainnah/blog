@@ -16,6 +16,7 @@ class CreateKomentarPertanyaanTable extends Migration
         Schema::create('komentar_pertanyaan', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->longText('isi');
+            $table->date('tanggal_dibuat')->nullablle();
             $table->unsignedBigInteger('pertanyaan_id');
             $table->foreign('pertanyaan_id')->references('id')->on('pertanyaan');
             $table->unsignedBigInteger('profil_id');
