@@ -13,10 +13,10 @@ class AddProfilIdToPertanyaan extends Migration
      */
     public function up()
     {
-        Schema::table('pertanyaan', function (Blueprint $table) {
-            $table->unsignedBigInteger('profil_id');
-            $table->foreign('profil_id')->references('id')->on('profil');
-        });
+        // Schema::table('pertanyaan', function (Blueprint $table) {
+        //     $table->unsignedBigInteger('profil_id');
+        //     $table->foreign('profil_id')->references('id')->on('profil');
+        // });
     }
 
     /**
@@ -26,9 +26,9 @@ class AddProfilIdToPertanyaan extends Migration
      */
     public function down()
     {
-        Schema::table('pertanyaan', function (Blueprint $table) {
-            $table->dropForeign(['profil_id']);
-            $table->dropColumn(['profil_id']);
-        });
+        // Schema::table('pertanyaan', function (Blueprint $table) {
+        //     $table->dropForeign(['profil_id']);
+        //     $table->dropColumn(['profil_id']);
+        // });
     }
 }
